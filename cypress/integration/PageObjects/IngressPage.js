@@ -6,6 +6,38 @@ import ApiPage from '../PageObjects/ApiPage.js'
 
 class IngressPage {
 
+  verifyIngressCardIsDisplay(){
+    cy.get(':nth-child(3) > .-center > .chi-stat__content').should('be.visible');
+  }
+
+  verifyIngressCountIsDisplay(){
+    cy.get(':nth-child(3) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').should('be.visible');
+  }
+
+  verifyIngressImpectedCountIsDisplay(){
+    cy.get(':nth-child(3) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').should('be.visible');
+  }
+
+  verifyIngressTextIsDisplay(){
+    cy.get(':nth-child(3) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > .chi-stat-metric__title').contains('INGRESS');
+  }
+
+  verifyIngressGatwaysTabIsDisplay(){
+    cy.get('#ingress-list-tab > li.-active > a').should('be.visible');
+  }
+  verifyIngressSearchBoxIsDisplay(){
+    cy.get('#example__icon-left-aligned').should('be.visible');
+  }
+
+  verifyIngressDataTableIsDisplay(){
+    cy.get('#ngcs-core-section').should('be.visible');
+  }
+
+  verifyIngressDataTableSbcIsDisplay(){
+    cy.get('#ingress-list-tab > li:nth-child(2) > a:nth-child(1)').should('be.visible').click();
+    cy.get('#core-devices-section').should('be.visible');
+  }
+
   verifyIngressCardDetails() {
     var mtoken = Cypress.env('mytoken');
     cy.request({

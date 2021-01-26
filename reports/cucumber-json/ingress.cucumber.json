@@ -1,0 +1,551 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "validate scenarios for INGRESS page",
+    "line": 1,
+    "id": "validate-scenarios-for-ingress-page",
+    "tags": [],
+    "uri": "ingress.feature",
+    "elements": [
+      {
+        "id": "validate-scenarios-for-ingress-page;tc1_ingress_verify-if-ingress-card-get-displayed-on-ng911-dashboard",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "TC1_INGRESS_Verify if INGRESS card get displayed on NG911 dashboard",
+        "tags": [
+          {
+            "name": "@Test_FFP-27743",
+            "line": 11
+          },
+          {
+            "name": "@regression",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10473000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8261000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I verify if INGRESS card get displayed on NG911 dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 2512000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc2_ingress_verify-if-ingress-card-displayes-total-ingress-count",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "TC2_INGRESS_Verify if INGRESS card displayes total ingress count",
+        "tags": [
+          {
+            "name": "@Test_FFP-27744",
+            "line": 17
+          },
+          {
+            "name": "@regression",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8798000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8424000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I verify if INGRESS card displayes total ingress count",
+            "result": {
+              "status": "passed",
+              "duration": 1337000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc3_ingress_verify-tab-gateways-get-displayed-under-ingress-card",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "TC3_INGRESS_Verify tab Gateways get displayed under ingress card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27745",
+            "line": 23
+          },
+          {
+            "name": "@regression",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9379000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I verify tab Gateways displayed under ingress card",
+            "result": {
+              "status": "passed",
+              "duration": 4992000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc4_ingress_verify-search-box-get-displayed-under-tab-gateways-and-sbcs",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "TC4_INGRESS_Verify search box get displayed under tab Gateways and SBCs",
+        "tags": [
+          {
+            "name": "@Test_FFP-27746",
+            "line": 29
+          },
+          {
+            "name": "@regression",
+            "line": 29
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8564000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8251000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I verify search box get displayed under tab Gateways and SBCs",
+            "result": {
+              "status": "passed",
+              "duration": 3257000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc5_ingress_verify-ingress-table-get-displayed-under-tab-gateways",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "TC5_INGRESS_verify INGRESS table get displayed under tab Gateways",
+        "tags": [
+          {
+            "name": "@Test_FFP-27747",
+            "line": 35
+          },
+          {
+            "name": "@regression",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7070000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8336000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I verify INGRESS table get displayed under tab Gateways",
+            "result": {
+              "status": "passed",
+              "duration": 2837000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc6_ingress_verify-column-names-ingress,status,trunks-available,trunks-active,calls-received,calls-delivered-and-link-utilization-in-tab-gateways",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "TC6_INGRESS_Verify column names Ingress,status,Trunks Available,Trunks Active,calls Received,Calls Delivered and link utilization in tab Gateways",
+        "tags": [
+          {
+            "name": "@Test_FFP-27748",
+            "line": 41
+          },
+          {
+            "name": "@regression",
+            "line": 41
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9922000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9777000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I verify column names Ingress,status,Trunks Available,Trunks Active,calls Received,Calls Delivered and link utilization in tab Gateways",
+            "result": {
+              "status": "passed",
+              "duration": 2153000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc7_ingress_verify-ingress-table-get-displayed-under-tab-sbcs",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "TC7_INGRESS_Verify INGRESS table get displayed under tab SBCs",
+        "tags": [
+          {
+            "name": "@Test_FFP-27749",
+            "line": 47
+          },
+          {
+            "name": "@regression",
+            "line": 47
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7777000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9784000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "I verify INGRESS table get displayed under tab SBCs",
+            "result": {
+              "status": "passed",
+              "duration": 2379000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc8_ingress_verify-colums-ingress-sbc,status,calls-received,calls-delivered-and-link-utilization(%)",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "TC8_INGRESS_Verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)",
+        "tags": [
+          {
+            "name": "@Test_FFP-27750",
+            "line": 53
+          },
+          {
+            "name": "@regression",
+            "line": 53
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 11289000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 56,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "I verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)",
+            "result": {
+              "status": "undefined",
+              "duration": 40000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc9_ingress_verify-if-ingress-word-get-displayed-in-ingress-card",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "TC9_INGRESS_Verify if INGRESS word get displayed in ingress card",
+        "tags": [
+          {
+            "name": "@Test_27832",
+            "line": 59
+          },
+          {
+            "name": "@regression",
+            "line": 59
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8975000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 62,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9068000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "I verify if INGRESS word get displayed in ingress card",
+            "result": {
+              "status": "passed",
+              "duration": 1188000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc10_ingress_verify-if-ingress-impacted-count-displayed-in-ui-is-same-in-api-response",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "TC10_INGRESS_Verify if INGRESS impacted count displayed in UI is same in API response",
+        "tags": [
+          {
+            "name": "@Test_27833",
+            "line": 65
+          },
+          {
+            "name": "@regression",
+            "line": 65
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 67,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10264000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 68,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 10670000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "I verify if INGRESS impacted count displayed in UI is same in API response",
+            "result": {
+              "status": "passed",
+              "duration": 2855000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-ingress-page;tc11_ingress_verify-if-all-ingress-table-headers-displayed-under-gateways-tab-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 72,
+        "name": "TC11_INGRESS_Verify if all INGRESS table headers displayed under Gateways tab should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_27834",
+            "line": 71
+          },
+          {
+            "name": "@regression",
+            "line": 71
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 73,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10629000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 74,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8581000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 75,
+            "name": "I verify if all INGRESS table headers displayed under Gateways tab should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 3314000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

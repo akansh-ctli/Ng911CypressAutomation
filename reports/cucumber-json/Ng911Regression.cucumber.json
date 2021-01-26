@@ -1,0 +1,2417 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate Regression scenarios for NG911",
+    "line": 1,
+    "id": "validate-regression-scenarios-for-ng911",
+    "tags": [],
+    "uri": "Ng911Regression.feature",
+    "elements": [
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc1_homepage_verify-if-we-are-able-to-login-on-ng911-dashboard",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "TC1_HomePage_Verify if we are able to login on NG911 dashboard",
+        "tags": [
+          {
+            "name": "@Test_FFP-27836",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 14925000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I Verify if we are able to login on NG911 dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 3262000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc2_homepage_verify-if-lumen-logo-should-enable-at-login-page-for-ng911",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "TC2_HomePage_Verify if Lumen logo should enable at login page for NG911",
+        "tags": [
+          {
+            "name": "@Test_FFP-27837",
+            "line": 9
+          },
+          {
+            "name": "@regression",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9206000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I verify if Lumen logo should enable at login page for NG911",
+            "result": {
+              "status": "passed",
+              "duration": 2176000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc1_psap_verify-if-psap-card-should-be-display-on-ng911-dashboard",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "TC1_PSAP_Verify if PSAP card should be display on NG911 dashboard",
+        "tags": [
+          {
+            "name": "@Test_FFP-27695",
+            "line": 15
+          },
+          {
+            "name": "@regression",
+            "line": 15
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7001000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8111000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I verify PSAP card shuld display on dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 3109000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc2_psap_verify-if-psap-count-should-be-display-on-psap-card",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "TC2_PSAP_Verify if PSAP count should be display on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27696",
+            "line": 21
+          },
+          {
+            "name": "@regression",
+            "line": 21
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10906000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 10553000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I verify PSAP count should be display on PSAP card",
+            "result": {
+              "status": "passed",
+              "duration": 3130000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc3_psap_verify-if-\"psap\"-should-be-display-on-psap-card",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "TC3_PSAP_Verify if \"PSAP\" should be display on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27697",
+            "line": 27
+          },
+          {
+            "name": "@regression",
+            "line": 27
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7612000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8937000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I verify PSAP text should be display on PSAP card",
+            "result": {
+              "status": "passed",
+              "duration": 3111000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc4_psap_verify-if-impacted-count-should-be-display-on-psap-card",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "TC4_PSAP_Verify if impacted count should be display on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27698",
+            "line": 33
+          },
+          {
+            "name": "@regression",
+            "line": 33
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8695000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8962000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I verify impacted count should be display on PSAP card",
+            "result": {
+              "status": "passed",
+              "duration": 3101000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc5_psap_verify-if-map-tab-should-be-display-under-psap-card",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "TC5_PSAP_Verify if Map Tab should be display under PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27699",
+            "line": 39
+          },
+          {
+            "name": "@regression",
+            "line": 39
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7961000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "I verify Map Tab should be display under PSAP card",
+            "result": {
+              "status": "passed",
+              "duration": 3200000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc6_psap_verify-if-list-tab-should-be-display-under-psap-card",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "TC6_PSAP_Verify if List Tab should be display under PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27700",
+            "line": 45
+          },
+          {
+            "name": "@regression",
+            "line": 45
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9003000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8236000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "I verify if List Tab should be display under PSAP card",
+            "result": {
+              "status": "passed",
+              "duration": 3158000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc7_psap_verify-if-search-box-should-be-display-under-list-tab-on-psap-card",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "TC7_PSAP_Verify if search box should be display under List Tab on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277001",
+            "line": 51
+          },
+          {
+            "name": "@regression",
+            "line": 51
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 53,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8911000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 54,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8196000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 55,
+            "name": "I verify search box should be display under List Tab on PSAP card",
+            "result": {
+              "status": "passed",
+              "duration": 5814000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc8_psap_verify-if-psap-data-table-should-be-display-under-list-tab-on-psap-card",
+        "keyword": "Scenario",
+        "line": 58,
+        "name": "TC8_PSAP_Verify if PSAP Data table should be display under List Tab on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277002",
+            "line": 57
+          },
+          {
+            "name": "@regression",
+            "line": 57
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 59,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8684000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 60,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "I verify if PSAP Data table should be display under List Tab on PSAP card",
+            "result": {
+              "status": "passed",
+              "duration": 5856000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc9_psap_verify-if-psap,-status,psap-id,calls-received,calls-missed-and-mos-score-should-be-display-as-table-header-under-list-tab-on-psap-card",
+        "keyword": "Scenario",
+        "line": 64,
+        "name": "TC9_PSAP_Verify if PSAP, Status,PSAP ID,Calls Received,Calls Missed and MOS Score should be display as table header under List Tab on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277003",
+            "line": 63
+          },
+          {
+            "name": "@regression",
+            "line": 63
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 65,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10391000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 66,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8831000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "I verify if PSAP, Status,PSAP ID,Calls Received,Calls Missed and MOS Score should be display as table header under List Tab on PSAP card",
+            "result": {
+              "status": "passed",
+              "duration": 6724000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc10_psap:verify-if-psap-count-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "TC10_PSAP:Verify if PSAP count on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277004",
+            "line": 69
+          },
+          {
+            "name": "@regression",
+            "line": 69
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 11267000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 72,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8990000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "I verify if PSAP count on UI should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 4310000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc11_psap_verify-if-text-\"psap\"-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 76,
+        "name": "TC11_PSAP_Verify if text \"PSAP\" on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277005",
+            "line": 75
+          },
+          {
+            "name": "@regression",
+            "line": 75
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 77,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10901000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 78,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 10354000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 79,
+            "name": "I verify if text PSAP on UI should be same as API response",
+            "result": {
+              "status": "failed",
+              "duration": 9033000000,
+              "error_message": "AssertionError: Timed out retrying: Expected to find content: '4 Impacted' within the element: <div.chi-stat-submetric> but never did.\n    + expected - actual\n\n\n    at Context.eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\Ng911Regression.feature:994:113)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc12_psap_verify-if-impacted-count-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 82,
+        "name": "TC12_PSAP_Verify if impacted count on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277006",
+            "line": 81
+          },
+          {
+            "name": "@regression",
+            "line": 81
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 83,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 13029000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 84,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 10482000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 85,
+            "name": "I verify if impacted count on UI should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 4121000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc13_psap_verify-if-all-psap-table-header-under-list-tab-on-psap-card-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 89,
+        "name": "TC13_PSAP_Verify if all PSAP table header under List Tab on PSAP card should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277006",
+            "line": 88
+          },
+          {
+            "name": "@regression",
+            "line": 88
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 90,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9353000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 91,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 10255000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 92,
+            "name": "I verify if all PSAP table header under List Tab on PSAP card should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 4398000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc14_ngcs_verify-if-ngcs-card-should-be-display-on-ng911-dashboard",
+        "keyword": "Scenario",
+        "line": 95,
+        "name": "TC14_NGCS_Verify if NGCS card should be display on NG911 dashboard",
+        "tags": [
+          {
+            "name": "@Test_FFP-277008",
+            "line": 94
+          },
+          {
+            "name": "@regression",
+            "line": 94
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 96,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10605000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 97,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8838000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 98,
+            "name": "I verify if NGCS card should be display on NG911 dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1166000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc15_ngcs_verify-if-ngcs-count-should-be-display-on-ngcs-card",
+        "keyword": "Scenario",
+        "line": 101,
+        "name": "TC15_NGCS_Verify if NGCS count should be display on NGCS card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277009",
+            "line": 100
+          },
+          {
+            "name": "@regression",
+            "line": 100
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 102,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9215000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 103,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 104,
+            "name": "I verify if NGCS count should be display on NGCS card",
+            "result": {
+              "status": "passed",
+              "duration": 1321000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc16_ngcs_verify-if-txt-\"ngcs\"-should-be-display-on-ngcs-card",
+        "keyword": "Scenario",
+        "line": 107,
+        "name": "TC16_NGCS_Verify if txt \"NGCS\" should be display on NGCS card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277010",
+            "line": 106
+          },
+          {
+            "name": "@regression",
+            "line": 106
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 108,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 11265000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 109,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8365000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 110,
+            "name": "I verify if text NGCS should be display on NGCS card",
+            "result": {
+              "status": "passed",
+              "duration": 1372000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc17_ngcs_verify-if-impacted-count-should-be-display-on-ngcs-card",
+        "keyword": "Scenario",
+        "line": 113,
+        "name": "TC17_NGCS_Verify if impacted count should be display on NGCS card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277017",
+            "line": 112
+          },
+          {
+            "name": "@regression",
+            "line": 112
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 114,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9265000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 115,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8869000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 116,
+            "name": "I verify if impacted count should be display on NGCS card",
+            "result": {
+              "status": "passed",
+              "duration": 1196000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc18_ngcs_verify-if-ngcs-core-tab-should-be-display-under-ngcs-card",
+        "keyword": "Scenario",
+        "line": 119,
+        "name": "TC18_NGCS_Verify if NGCS Core Tab should be display under NGCS card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277018",
+            "line": 118
+          },
+          {
+            "name": "@regression",
+            "line": 118
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 120,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8097000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 121,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8241000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 122,
+            "name": "I verify if NGCS Core Tab should be display under NGCS card",
+            "result": {
+              "status": "passed",
+              "duration": 3533000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc19_ngcs_verify-if-component-status-tab-should-be-display-under-ngcs-card",
+        "keyword": "Scenario",
+        "line": 125,
+        "name": "TC19_NGCS_Verify if Component Status Tab should be display under NGCS card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277019",
+            "line": 124
+          },
+          {
+            "name": "@regression",
+            "line": 124
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 126,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 11434000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 127,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 10651000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 128,
+            "name": "I verify if Component Status Tab should be display under NGCS card",
+            "result": {
+              "status": "passed",
+              "duration": 2931000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc20_ngcs_verify-if-core-functions-tab-should-be-display-under-ngcs",
+        "keyword": "Scenario",
+        "line": 131,
+        "name": "TC20_NGCS_Verify if Core Functions Tab should be display under NGCS",
+        "tags": [
+          {
+            "name": "@Test_FFP-277020",
+            "line": 130
+          },
+          {
+            "name": "@regression",
+            "line": 130
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 132,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9655000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 133,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8897000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 134,
+            "name": "I verify if Core Functions Tab should be display under NGCS",
+            "result": {
+              "status": "passed",
+              "duration": 3858000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc21_ngcs_verify-if-search-box-should-be-display-under-ngcs-card",
+        "keyword": "Scenario",
+        "line": 137,
+        "name": "TC21_NGCS_Verify if search box should be display under NGCS card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277021",
+            "line": 136
+          },
+          {
+            "name": "@regression",
+            "line": 136
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 138,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8757000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 139,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8692000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 140,
+            "name": "I verify if search box should be display under NGCS card",
+            "result": {
+              "status": "passed",
+              "duration": 2422000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc22_ngcs_verify-if-ngcs-data-table-should-be-display-under-ngcs-card",
+        "keyword": "Scenario",
+        "line": 143,
+        "name": "TC22_NGCS_Verify if NGCS Data table should be display under NGCS card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277022",
+            "line": 142
+          },
+          {
+            "name": "@regression",
+            "line": 142
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 144,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9846000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 145,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 146,
+            "name": "I verify if NGCS Data table should be display under NGCS card",
+            "result": {
+              "status": "passed",
+              "duration": 2620000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc26_ngcs_verify-if-ngcs-count-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 149,
+        "name": "TC26_NGCS_Verify if NGCS count on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277026",
+            "line": 148
+          },
+          {
+            "name": "@regression",
+            "line": 148
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 150,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10368000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 151,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8115000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 152,
+            "name": "I verify if NGCS count on UI should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 1948000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc27_ngcs_verify-if-text-\"ngcs\"-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 155,
+        "name": "TC27_NGCS_Verify if text \"NGCS\" on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277027",
+            "line": 154
+          },
+          {
+            "name": "@regression",
+            "line": 154
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 156,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 157,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 158,
+            "name": "I verify if text NGCS on UI should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 1807000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc28_ngcs_verify-if-impacted-count-on-ui-should-be-same-as-api-response-for-ngcs",
+        "keyword": "Scenario",
+        "line": 161,
+        "name": "TC28_NGCS_Verify if impacted count on UI should be same as API response for NGCS",
+        "tags": [
+          {
+            "name": "@Test_FFP-277028",
+            "line": 160
+          },
+          {
+            "name": "@regression",
+            "line": 160
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 162,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 163,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 164,
+            "name": "I verify if impacted count on UI should be same as API response for NGCS",
+            "result": {
+              "status": "passed",
+              "duration": 2068000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc29_ngcs_verify-if-all-ngcs-table-header-under-list-tab-on-ngcs-card-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 167,
+        "name": "TC29_NGCS_Verify if all NGCS table header under List Tab on NGCS card should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277029",
+            "line": 166
+          },
+          {
+            "name": "@regression",
+            "line": 166
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 168,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9381000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 169,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9596000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 170,
+            "name": "I verify if all NGCS table header under List Tab on NGCS card should be same as API response",
+            "result": {
+              "status": "failed",
+              "duration": 2104000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n       \"callsRecived\"\n       \"callsRoutedSuccessfully\"\n       \"ngcsCoreName\"\n       \"ngcsCoreStatus\"\n    -  \"secondaryRoutedCalls\"\n     ]\n\n    at eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\Ng911Regression.feature:833:11)\n    at Context.eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\Ng911Regression.feature:832:22)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc1_ingress_verify-if-ingress-card-get-displayed-on-ng911-dashboard",
+        "keyword": "Scenario",
+        "line": 173,
+        "name": "TC1_INGRESS_Verify if INGRESS card get displayed on NG911 dashboard",
+        "tags": [
+          {
+            "name": "@Test_FFP-27743",
+            "line": 172
+          },
+          {
+            "name": "@regression",
+            "line": 172
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 174,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 11006000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 175,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8937000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 176,
+            "name": "I verify if INGRESS card get displayed on NG911 dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1306000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc2_ingress_verify-if-ingress-card-displayes-total-ingress-count",
+        "keyword": "Scenario",
+        "line": 179,
+        "name": "TC2_INGRESS_Verify if INGRESS card displayes total ingress count",
+        "tags": [
+          {
+            "name": "@Test_FFP-27744",
+            "line": 178
+          },
+          {
+            "name": "@regression",
+            "line": 178
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 180,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8598000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 181,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8199000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 182,
+            "name": "I verify if INGRESS card displayes total ingress count",
+            "result": {
+              "status": "passed",
+              "duration": 1541000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc3_ingress_verify-tab-gateways-get-displayed-under-ingress-card",
+        "keyword": "Scenario",
+        "line": 185,
+        "name": "TC3_INGRESS_Verify tab Gateways get displayed under ingress card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27745",
+            "line": 184
+          },
+          {
+            "name": "@regression",
+            "line": 184
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 186,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9282000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 187,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8573000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 188,
+            "name": "I verify tab Gateways displayed under ingress card",
+            "result": {
+              "status": "passed",
+              "duration": 2428000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc4_ingress_verify-search-box-get-displayed-under-tab-gateways-and-sbcs",
+        "keyword": "Scenario",
+        "line": 191,
+        "name": "TC4_INGRESS_Verify search box get displayed under tab Gateways and SBCs",
+        "tags": [
+          {
+            "name": "@Test_FFP-27746",
+            "line": 190
+          },
+          {
+            "name": "@regression",
+            "line": 190
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 192,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9538000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 193,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8968000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 194,
+            "name": "I verify search box get displayed under tab Gateways and SBCs",
+            "result": {
+              "status": "passed",
+              "duration": 2689000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc5_ingress_verify-ingress-table-get-displayed-under-tab-gateways",
+        "keyword": "Scenario",
+        "line": 197,
+        "name": "TC5_INGRESS_verify INGRESS table get displayed under tab Gateways",
+        "tags": [
+          {
+            "name": "@Test_FFP-27747",
+            "line": 196
+          },
+          {
+            "name": "@regression",
+            "line": 196
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 198,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 199,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 200,
+            "name": "I verify INGRESS table get displayed under tab Gateways",
+            "result": {
+              "status": "passed",
+              "duration": 2666000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc6_ingress_verify-column-names-ingress,status,trunks-available,trunks-active,calls-received,calls-delivered-and-link-utilization-in-tab-gateways",
+        "keyword": "Scenario",
+        "line": 203,
+        "name": "TC6_INGRESS_Verify column names Ingress,status,Trunks Available,Trunks Active,calls Received,Calls Delivered and link utilization in tab Gateways",
+        "tags": [
+          {
+            "name": "@Test_FFP-27748",
+            "line": 202
+          },
+          {
+            "name": "@regression",
+            "line": 202
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 204,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7941000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 205,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8489000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 206,
+            "name": "I verify column names Ingress,status,Trunks Available,Trunks Active,calls Received,Calls Delivered and link utilization in tab Gateways",
+            "result": {
+              "status": "passed",
+              "duration": 2255000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc7_ingress_verify-ingress-table-get-displayed-under-tab-sbcs",
+        "keyword": "Scenario",
+        "line": 209,
+        "name": "TC7_INGRESS_Verify INGRESS table get displayed under tab SBCs",
+        "tags": [
+          {
+            "name": "@Test_FFP-27749",
+            "line": 208
+          },
+          {
+            "name": "@regression",
+            "line": 208
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 210,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 211,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8176000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 212,
+            "name": "I verify INGRESS table get displayed under tab SBCs",
+            "result": {
+              "status": "passed",
+              "duration": 3037000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc8_ingress_verify-colums-ingress-sbc,status,calls-received,calls-delivered-and-link-utilization(%)",
+        "keyword": "Scenario",
+        "line": 215,
+        "name": "TC8_INGRESS_Verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)",
+        "tags": [
+          {
+            "name": "@Test_FFP-27750",
+            "line": 214
+          },
+          {
+            "name": "@regression",
+            "line": 214
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 216,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 12494000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 217,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8657000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 218,
+            "name": "I verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)",
+            "result": {
+              "status": "undefined",
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc9_ingress_verify-if-ingress-word-get-displayed-in-ingress-card",
+        "keyword": "Scenario",
+        "line": 221,
+        "name": "TC9_INGRESS_Verify if INGRESS word get displayed in ingress card",
+        "tags": [
+          {
+            "name": "@Test_27832",
+            "line": 220
+          },
+          {
+            "name": "@regression",
+            "line": 220
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 222,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 10186000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 223,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8157000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 224,
+            "name": "I verify if INGRESS word get displayed in ingress card",
+            "result": {
+              "status": "passed",
+              "duration": 1267000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc10_ingress_verify-if-ingress-impacted-count-displayed-in-ui-is-same-in-api-response",
+        "keyword": "Scenario",
+        "line": 227,
+        "name": "TC10_INGRESS_Verify if INGRESS impacted count displayed in UI is same in API response",
+        "tags": [
+          {
+            "name": "@Test_27833",
+            "line": 226
+          },
+          {
+            "name": "@regression",
+            "line": 226
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 228,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9774000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 229,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 230,
+            "name": "I verify if INGRESS impacted count displayed in UI is same in API response",
+            "result": {
+              "status": "passed",
+              "duration": 2117000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc11_ingress_verify-if-all-ingress-table-headers-displayed-under-gateways-tab-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 233,
+        "name": "TC11_INGRESS_Verify if all INGRESS table headers displayed under Gateways tab should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_27834",
+            "line": 232
+          },
+          {
+            "name": "@regression",
+            "line": 232
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 234,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 235,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 236,
+            "name": "I verify if all INGRESS table headers displayed under Gateways tab should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 2852000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc1_alarms_verify-if-alarm-card-get-displayed-on-ng911-dashboard",
+        "keyword": "Scenario",
+        "line": 239,
+        "name": "TC1_ALARMS_Verify if ALARM card get displayed on NG911 dashboard",
+        "tags": [
+          {
+            "name": "@Test_FFP-27737",
+            "line": 238
+          },
+          {
+            "name": "@regression",
+            "line": 238
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 240,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9490000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 241,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8999000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 242,
+            "name": "I verify if ALARM card get displayed on NG911 dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1183000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc2_alarms_verify-if-alarm-card-displayes-total-alarm-count",
+        "keyword": "Scenario",
+        "line": 245,
+        "name": "TC2_ALARMS_Verify if ALARM card displayes total alarm count",
+        "tags": [
+          {
+            "name": "@Test_FFP-27738",
+            "line": 244
+          },
+          {
+            "name": "@regression",
+            "line": 244
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 246,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8708000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 247,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8303000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 248,
+            "name": "I verify if ALARM card displayes total alarm count",
+            "result": {
+              "status": "passed",
+              "duration": 1406000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc3_alarms_verify-if-search-box-is-displayed",
+        "keyword": "Scenario",
+        "line": 251,
+        "name": "TC3_ALARMS_Verify if search box is displayed",
+        "tags": [
+          {
+            "name": "@Test_FFP-27739",
+            "line": 250
+          },
+          {
+            "name": "@regression",
+            "line": 250
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 252,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9525000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 253,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 254,
+            "name": "I verify if search box is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 2603000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc4_alarms_verify-in-search-box-the-search-magnifier-icon-is-displayed",
+        "keyword": "Scenario",
+        "line": 257,
+        "name": "TC4_ALARMS_Verify in search box the search magnifier icon is displayed",
+        "tags": [
+          {
+            "name": "@Test_FFP-27740",
+            "line": 256
+          },
+          {
+            "name": "@regression",
+            "line": 256
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 258,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9039000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 259,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9329000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 260,
+            "name": "I verify in search box the search magnifier icon is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 2372000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc5_alarms_verify-alarms-table-get-displayed-in-alarms-page",
+        "keyword": "Scenario",
+        "line": 263,
+        "name": "TC5_ALARMS_Verify alarms table get displayed in alarms page",
+        "tags": [
+          {
+            "name": "@Test_FFP-27741",
+            "line": 262
+          },
+          {
+            "name": "@regression",
+            "line": 262
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 264,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9233000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 265,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9337000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 266,
+            "name": "I verify alarms table get displayed in alarms page",
+            "result": {
+              "status": "passed",
+              "duration": 2451000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc6_alarms_verify-columns-time,segment,device,severity-and-description-get-displayed",
+        "keyword": "Scenario",
+        "line": 269,
+        "name": "TC6_ALARMS_Verify columns Time,Segment,Device,Severity and Description get displayed",
+        "tags": [
+          {
+            "name": "@Test_FFP-27742",
+            "line": 268
+          },
+          {
+            "name": "@regression",
+            "line": 268
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 270,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8555000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 271,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9709000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 272,
+            "name": "I verify columns Time,Segment,Device,Severity and Description get displayed",
+            "result": {
+              "status": "failed",
+              "duration": 2592000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n       \"alarmTimestamp\"\n       \"device\"\n       \"metric\"\n       \"segment\"\n    +  \"threshold\"\n       \"type\"\n     ]\n\n    at eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\Ng911Regression.feature:506:11)\n    at Context.eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\Ng911Regression.feature:505:20)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc7_alarms_verify-if-alarm-word-get-displayed-in-alarms-card",
+        "keyword": "Scenario",
+        "line": 275,
+        "name": "TC7_ALARMS_Verify if ALARM word get displayed in Alarms card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27827",
+            "line": 274
+          },
+          {
+            "name": "@regression",
+            "line": 274
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 276,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9459000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 277,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9026000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 278,
+            "name": "I verify if ALARM word get displayed in Alarms card",
+            "result": {
+              "status": "passed",
+              "duration": 1834000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc9_alarms_verify-if-alarm-count-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 281,
+        "name": "TC9_ALARMS_Verify if ALARM count on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-27829",
+            "line": 280
+          },
+          {
+            "name": "@regression",
+            "line": 280
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 282,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 283,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 284,
+            "name": "I verify if ALARM count on UI should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 3082000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc10_alarms_verify-if-text-\"alarms\"-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 287,
+        "name": "TC10_ALARMS_Verify if text \"ALARMS\" on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-27830",
+            "line": 286
+          },
+          {
+            "name": "@regression",
+            "line": 286
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 288,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 289,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 9021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 290,
+            "name": "I verify if text ALARMS on UI should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 3275000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-ng911;tc11_alarms_verify-if-all-alarms-table-header-on-alarms-card-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 293,
+        "name": "TC11_ALARMS_Verify if all ALARMS table header on ALARMS card should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-27831",
+            "line": 292
+          },
+          {
+            "name": "@regression",
+            "line": 292
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 294,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8793000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 295,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8308000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 296,
+            "name": "I verify if all ALARMS table header on ALARMS card should be same as API response",
+            "result": {
+              "status": "failed",
+              "duration": 2591000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n       \"alarmTimestamp\"\n       \"device\"\n       \"metric\"\n       \"segment\"\n    +  \"threshold\"\n       \"type\"\n     ]\n\n    at eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\Ng911Regression.feature:506:11)\n    at Context.eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\Ng911Regression.feature:505:20)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

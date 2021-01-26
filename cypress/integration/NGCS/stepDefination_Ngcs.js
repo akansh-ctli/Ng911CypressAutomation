@@ -18,6 +18,76 @@ When('I will be on home page', () => {
   cy.log('home page Loaded successful');
 });
 
+Then('I verify if NGCS card should be display on NG911 dashboard', () => {
+  cy.wait(1000)
+  ngcsPage.validateNgcsCardIsEnable()
+});
+
+Then('I verify if NGCS count should be display on NGCS card', () => {
+  cy.wait(1000)
+  ngcsPage.validateNgcsCountIsEnable()
+});
+
+Then('I verify if text NGCS should be display on NGCS card', () => {
+  cy.wait(1000)
+  ngcsPage.validateNgcsTextIsDisplay()
+});
+
+Then('I verify if impacted count should be display on NGCS card', () => {
+  cy.wait(1000)
+  ngcsPage.validateNgcsImpactedCountIsDisplay()
+});
+
+Then('I verify if NGCS Core Tab should be display under NGCS card', () => {
+  cy.wait(1000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.verifyNgcsCore()
+});
+
+Then('I verify if Component Status Tab should be display under NGCS card', () => {
+  cy.wait(1000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.verifyNgcsComponentStatus()
+});
+
+Then('I verify if Core Functions Tab should be display under NGCS', () => {
+  cy.wait(1000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.verifyNgcsCoreFunctions()
+}); 
+
+Then('I verify if search box should be display under NGCS card', () => {
+  cy.wait(1000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.validateNgcsSearchBoxIsDisplay()
+}); 
+
+Then('I verify if NGCS Data table should be display under NGCS card', () => {
+  cy.wait(1000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.validateNgcsDataTableIsDisplay()
+});
+
+Then('I verify if NGCS count on UI should be same as API response', () => {
+  cy.wait(1000)
+  ngcsPage.verifyNgcsCardDetails()
+});
+
+Then('I verify if text NGCS on UI should be same as API response', () => {
+  cy.wait(1000)
+  ngcsPage.verifyNgcsCardDetails()
+});
+
+Then('I verify if impacted count on UI should be same as API response for NGCS', () => {
+  cy.wait(1000)
+  ngcsPage.verifyNgcsCardDetails()
+});
+
+Then('I verify if all NGCS table header under List Tab on NGCS card should be same as API response', () => {
+  cy.wait(1000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.verifyTableHeaderWithApiNGCS()
+});
 
 Then('I verify NgcsCore,ComponentStatus and NgcsCoreDevices tab on NGCS page', () => {
   cy.wait(1000)
@@ -25,7 +95,7 @@ Then('I verify NgcsCore,ComponentStatus and NgcsCoreDevices tab on NGCS page', (
   cy.wait(1000)
   ngcsPage.verifyNgcsCore()
   cy.wait(1000)
-  ngcsPage.verifyNgcsCoreDevices()
+  ngcsPage.verifyNgcsCoreFunctions()
   ngcsPage.verifyNgcsComponentStatus()
   cy.log('NGCS page validation successful');
 });

@@ -1,0 +1,464 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "validate regression scenarios for ALARMS page",
+    "line": 1,
+    "id": "validate-regression-scenarios-for-alarms-page",
+    "tags": [],
+    "uri": "alarms.feature",
+    "elements": [
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc1_alarms_verify-if-alarm-card-get-displayed-on-ng911-dashboard",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "TC1_ALARMS_Verify if ALARM card get displayed on NG911 dashboard",
+        "tags": [
+          {
+            "name": "@Test_FFP-27737",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 12351000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8114000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I verify if ALARM card get displayed on NG911 dashboard",
+            "result": {
+              "status": "passed",
+              "duration": 1612000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc2_alarms_verify-if-alarm-card-displayes-total-alarm-count",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "TC2_ALARMS_Verify if ALARM card displayes total alarm count",
+        "tags": [
+          {
+            "name": "@Test_FFP-27738",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9916000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I verify if ALARM card displayes total alarm count",
+            "result": {
+              "status": "passed",
+              "duration": 1242000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc3_alarms_verify-if-search-box-is-displayed",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "TC3_ALARMS_Verify if search box is displayed",
+        "tags": [
+          {
+            "name": "@Test_FFP-27739",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7655000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8460000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I verify if search box is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 4046000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc4_alarms_verify-in-search-box-the-search-magnifier-icon-is-displayed",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "TC4_ALARMS_Verify in search box the search magnifier icon is displayed",
+        "tags": [
+          {
+            "name": "@Test_FFP-27740",
+            "line": 29
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9129000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I verify in search box the search magnifier icon is displayed",
+            "result": {
+              "status": "passed",
+              "duration": 2244000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc5_alarms_verify-alarms-table-get-displayed-in-alarms-page",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "TC5_ALARMS_Verify alarms table get displayed in alarms page",
+        "tags": [
+          {
+            "name": "@Test_FFP-27741",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9216000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8259000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I verify alarms table get displayed in alarms page",
+            "result": {
+              "status": "passed",
+              "duration": 2649000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc6_alarms_verify-columns-time,segment,device,severity-and-description-get-displayed",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "TC6_ALARMS_Verify columns Time,Segment,Device,Severity and Description get displayed",
+        "tags": [
+          {
+            "name": "@Test_FFP-27742",
+            "line": 41
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8394000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8241000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I verify columns Time,Segment,Device,Severity and Description get displayed",
+            "result": {
+              "status": "failed",
+              "duration": 3932000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n       \"alarmTimestamp\"\n       \"device\"\n       \"metric\"\n       \"segment\"\n    +  \"threshold\"\n       \"type\"\n     ]\n\n    at eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\alarms.feature:88:11)\n    at Context.eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\alarms.feature:87:20)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc7_alarms_verify-if-alarm-word-get-displayed-in-alarms-card",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "TC7_ALARMS_Verify if ALARM word get displayed in Alarms card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27827",
+            "line": 47
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 9675000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8363000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "I verify if ALARM word get displayed in Alarms card",
+            "result": {
+              "status": "passed",
+              "duration": 1934000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc9_alarms_verify-if-alarm-count-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "TC9_ALARMS_Verify if ALARM count on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-27829",
+            "line": 53
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7908000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 56,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8351000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "I verify if ALARM count on UI should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 2654000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc10_alarms_verify-if-text-\"alarms\"-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "TC10_ALARMS_Verify if text \"ALARMS\" on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-27830",
+            "line": 59
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8299000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 62,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "I verify if text ALARMS on UI should be same as API response",
+            "result": {
+              "status": "passed",
+              "duration": 3047000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;tc11_alarms_verify-if-all-alarms-table-header-on-alarms-card-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "TC11_ALARMS_Verify if all ALARMS table header on ALARMS card should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-27831",
+            "line": 65
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 67,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 7421000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 68,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8468000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "I verify if all ALARMS table header on ALARMS card should be same as API response",
+            "result": {
+              "status": "failed",
+              "duration": 2373000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n       \"alarmTimestamp\"\n       \"device\"\n       \"metric\"\n       \"segment\"\n    +  \"threshold\"\n       \"type\"\n     ]\n\n    at eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\alarms.feature:88:11)\n    at Context.eval (https://nginx-master-po-ng911.kubeodc-test.corp.intranet/__cypress/tests?p=cypress\\integration\\alarms.feature:87:20)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

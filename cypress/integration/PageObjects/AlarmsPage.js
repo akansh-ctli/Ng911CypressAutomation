@@ -2,6 +2,33 @@
 
 class AlarmsPage {
 
+  verifyAlarmsCardIsDisplay() {
+    cy.get(':nth-child(4) > .-center > .chi-stat__content').should('be.visible');
+  }
+
+  verifyAlarmsCountIsDisplay() {
+    cy.get(':nth-child(4) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').should('be.visible');
+  }
+  verifySearchBoxIsDisplay(){
+    cy.get('#example__icon-left-aligned').should('be.visible');
+  }
+
+  verifySearchMagnifierIconDisplay(){
+    cy.get('#list-section > div > div > div > div > div.chi-form__item.-px--2.-mt--2 > div > i').should('be.visible');
+  }
+
+  verifyAlarmsDataTableDisplay(){
+    cy.get('#list-section > div > div > div > div > div.chi-card__content > section').should('be.visible');
+  }
+
+  verifyTextAlarmsDisplay(){
+    cy.get(':nth-child(4) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > .chi-stat-metric__title').contains('ALARMS');
+  }
+
+  verifyTextAlarmsDisplay(){
+    cy.get(':nth-child(4) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > .chi-stat-metric__title').contains('ALARMS');
+  }
+
 
   verifyAndClickAlarmsTab() {
     cy.get('div.chi-col:nth-child(4) > div:nth-child(1) > div:nth-child(1)').should('be.visible').click();

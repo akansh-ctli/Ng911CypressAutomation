@@ -17,6 +17,71 @@ When('I will be on home page', () => {
    cy.log('home page Loaded successful');
  });
 
+ 
+ Then('I verify if INGRESS card get displayed on NG911 dashboard', () => {
+     cy.wait(1000)
+     ingressPage.verifyIngressCardIsDisplay()
+  });
+
+  
+ Then('I verify if INGRESS card displayes total ingress count', () => {
+   cy.wait(1000)
+   ingressPage.verifyIngressCountIsDisplay()
+});
+
+Then('I verify if INGRESS word get displayed in ingress card', () => {
+   cy.wait(1000)
+   ingressPage.verifyIngressTextIsDisplay()
+});
+
+Then('I verify tab Gateways displayed under ingress card', () => {
+   cy.wait(1000)
+   ingressPage.verifyAndClickIngressTab() 
+   ingressPage.verifyIngressGatewaysTab()
+});
+
+Then('I verify search box get displayed under tab Gateways and SBCs', () => {
+   cy.wait(1000)
+   ingressPage.verifyAndClickIngressTab() 
+   ingressPage.verifyIngressSearchBoxIsDisplay()
+});
+
+Then('I verify INGRESS table get displayed under tab Gateways', () => {
+   cy.wait(1000)
+   ingressPage.verifyAndClickIngressTab() 
+   ingressPage.verifyIngressDataTableIsDisplay()
+});
+
+Then('I verify column names Ingress,status,Trunks Available,Trunks Active,calls Received,Calls Delivered and link utilization in tab Gateways', () => {
+   cy.wait(1000)
+   ingressPage.verifyAndClickIngressTab() 
+   ingressPage.verifyTableHeaderWithApiIngress()
+});
+
+Then('I verify INGRESS table get displayed under tab SBCs', () => {
+   cy.wait(1000)
+   ingressPage.verifyAndClickIngressTab() 
+   ingressPage.verifyIngressDataTableSbcIsDisplay()
+});
+
+Then('I verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)', () => {
+   cy.wait(1000)
+   ingressPage.verifyAndClickIngressTab() 
+   ingressPage.verifyTableHeaderWithApiIngress()
+});
+
+Then('I verify if INGRESS impacted count displayed in UI is same in API response', () => {
+   cy.wait(1000)
+   ingressPage.verifyIngressCardDetails()
+});
+
+
+Then('I verify if all INGRESS table headers displayed under Gateways tab should be same as API response', () => {
+   cy.wait(1000)
+   ingressPage.verifyAndClickIngressTab() 
+   ingressPage.verifyTableHeaderWithApiIngress()
+});
+
  Then('I verify Gateways, SBCs Tabs and data table present on INGRESS page', () => {
     cy.wait(1000)
       ingressPage.verifyAndClickIngressTab() 

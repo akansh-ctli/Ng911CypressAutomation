@@ -21,6 +21,10 @@
           {
             "name": "@ng911sanity",
             "line": 1
+          },
+          {
+            "name": "@Test_FFP-27904",
+            "line": 3
           }
         ],
         "type": "scenario",
@@ -32,7 +36,7 @@
             "name": "I open NG911 login page",
             "result": {
               "status": "passed",
-              "duration": 11082000000
+              "duration": 15938000000
             }
           },
           {
@@ -42,7 +46,7 @@
             "name": "I will be on home page",
             "result": {
               "status": "passed",
-              "duration": 8124000000
+              "duration": 10926000000
             }
           }
         ]
@@ -66,8 +70,8 @@
             "line": 9,
             "name": "I verify List and Map tab on PSAP page",
             "result": {
-              "status": "passed",
-              "duration": 10109000000
+              "status": "skipped",
+              "duration": 829000000
             }
           },
           {
@@ -76,8 +80,7 @@
             "line": 10,
             "name": "I verify card details on PSAP page With API",
             "result": {
-              "status": "passed",
-              "duration": 5569000000
+              "status": "skipped"
             }
           }
         ]
@@ -101,8 +104,8 @@
             "line": 14,
             "name": "I verify NgcsCore,ComponentStatus and NgcsCoreDevices tab on NGCS page",
             "result": {
-              "status": "passed",
-              "duration": 10618000000
+              "status": "skipped",
+              "duration": 21000000
             }
           },
           {
@@ -111,8 +114,7 @@
             "line": 15,
             "name": "I verify card details on NGCS page With API",
             "result": {
-              "status": "passed",
-              "duration": 6083000000
+              "status": "skipped"
             }
           }
         ]
@@ -136,8 +138,8 @@
             "line": 19,
             "name": "I verify Gateways, SBCs Tabs and data table present on INGRESS page",
             "result": {
-              "status": "passed",
-              "duration": 4388000000
+              "status": "skipped",
+              "duration": 123000000
             }
           },
           {
@@ -146,8 +148,7 @@
             "line": 20,
             "name": "I verify card details on INGRESS page With API",
             "result": {
-              "status": "passed",
-              "duration": 4030000000
+              "status": "skipped"
             }
           }
         ]
@@ -171,8 +172,8 @@
             "line": 24,
             "name": "I verify data table present on ALARMS page",
             "result": {
-              "status": "passed",
-              "duration": 4295000000
+              "status": "skipped",
+              "duration": 61000000
             }
           },
           {
@@ -181,8 +182,7 @@
             "line": 25,
             "name": "I verify card details on ALARMS page With API",
             "result": {
-              "status": "passed",
-              "duration": 3850000000
+              "status": "skipped"
             }
           }
         ]

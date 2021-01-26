@@ -2,21 +2,110 @@
 
 class PsapPage {
 
-  validateListTab() {
-    //const statTime = Cypress.moment().format('HH:MM:SS')
-    //cy.log('start time--', statTime);
-    cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').and('have.text', 'List');
-    return this
+  validateLoginPage(){
+    cy.wait(2000)
+    cy.get('a[aria-label="Lumen"]').should('be.visible');
   }
-
   validatePsapCard(){
     cy.get(':nth-child(1) > .-center > .chi-stat__content').should('be.visible');
   }
+  validatePsapCount(){
+    cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').should('be.visible');
+  }
+  validatePsapText(){
+    cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > .chi-stat-metric__title').contains('PSAP');
+  }
 
+  validatePsapImpectedCount(){
+    cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').should('be.visible');
+  }
   validateMapTab() {
     cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > .-active > a').should('be.visible').and('have.text', 'Map');
     return this
   }
+  
+  validateListTab() {
+    cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').and('have.text', 'List');
+    return this
+  }
+
+  validateSearchBoxAtPsapTab() {
+    cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+    cy.wait(2000)
+    cy.get('#example__icon-right-aligned').should('be.visible');
+    return this
+  }
+
+  validatePsapDataTableIsEnable() {
+    cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+    cy.wait(2000)
+    cy.get('table[data-v-6394997e]>tbody').should('be.visible');
+    return this
+  }
+
+  verifyTableHeaderWithApiPSAP() {
+    var mtoken = Cypress.env('mytoken');
+    cy.request({
+      method: "get",
+      followRedirect: false,
+      log: true,
+      url:
+        "https://api-dev1.centurylink.com/DataServices/v1/PublicSafety/ng911/refresh/PSAP",
+      headers: {
+        accept: "application/json",
+        Authorization: "Bearer " + mtoken,
+      },
+      response: [],
+    }).then((response) => {
+      assert.equal(response.status, 200);
+      //cy.log(response.body);
+      expect(response.body).to.not.be.null;
+      let psapsList = response.body.psaps;
+      psapsList.forEach((item) => {
+        expect(item).to.have.all.keys(
+          "name",
+          "id",
+          "psapName",
+          "status",
+          "callsReceived",
+          "callsMissed",
+          "moSScore",
+          "address",
+          "circuits",
+          "alerts"
+        );
+      });
+    });
+  }
+  
+  verifyPsapCardDetails() {
+    var mtoken = Cypress.env('mytoken');
+    cy.request({
+      method: "get",
+      followRedirect: false,
+      log: true,
+      url:
+        "https://api-dev1.centurylink.com/DataServices/v1/PublicSafety/ng911/refresh/PSAP",
+      headers: {
+        accept: "application/json",
+        Authorization: "Bearer " + mtoken,
+      },
+      response: [],
+    }).then((response) => {
+      assert.equal(response.status, 200);
+      cy.log(response.body);
+      expect(response.body).to.not.be.null;
+      let psapCount = response.body.psapCount;
+      let impactedCount = response.body.psapImpactedCount + ' Impacted';
+      cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > .chi-stat-metric__title').contains('PSAP');
+      cy.log("PSAP count-", psapCount);
+      cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').contains(psapCount);
+      cy.log("PSAP impacted-", impactedCount);
+      cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').contains(impactedCount);
+    });
+  }
+
+
 
   getPsapIdsFromServiceMap(){
     //cy.get('div.chi-popover:nth-child(6) > div:nth-child(1) > div:nth-child(1)').click({force: true})
@@ -64,69 +153,8 @@ class PsapPage {
     }
   }
 
-  verifyTableHeaderWithApiPSAP() {
-    var mtoken = Cypress.env('mytoken');
-    cy.request({
-      method: "get",
-      followRedirect: false,
-      log: true,
-      url:
-        "https://api-dev1.centurylink.com/DataServices/v1/PublicSafety/ng911/refresh/PSAP",
-      headers: {
-        accept: "application/json",
-        Authorization: "Bearer " + mtoken,
-      },
-      response: [],
-    }).then((response) => {
-      assert.equal(response.status, 200);
-      //cy.log(response.body);
-      expect(response.body).to.not.be.null;
-      let psapsList = response.body.psaps;
-      psapsList.forEach((item) => {
-        expect(item).to.have.all.keys(
-          "name",
-          "id",
-          "psapName",
-          "status",
-          "callsReceived",
-          "callsMissed",
-          "moSScore",
-          "address",
-          "circuits",
-          "alerts"
-        );
-      });
-    });
-  }
-
-  verifyPsapCardDetails() {
-
-    var mtoken = Cypress.env('mytoken');
-    cy.request({
-      method: "get",
-      followRedirect: false,
-      log: true,
-      url:
-        "https://api-dev1.centurylink.com/DataServices/v1/PublicSafety/ng911/refresh/PSAP",
-      headers: {
-        accept: "application/json",
-        Authorization: "Bearer " + mtoken,
-      },
-      response: [],
-    }).then((response) => {
-      assert.equal(response.status, 200);
-      cy.log(response.body);
-      expect(response.body).to.not.be.null;
-      let psapCount = response.body.psapCount;
-      let impactedCount = response.body.psapImpactedCount + ' Impacted';
-      cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > .chi-stat-metric__title').contains('PSAP');
-      cy.log("PSAP count-", psapCount);
-      cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').contains(psapCount);
-      cy.log("PSAP impacted-", impactedCount);
-      cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').contains(impactedCount);
-    });
-  }
-
+  
+  
   
 }
 export default PsapPage

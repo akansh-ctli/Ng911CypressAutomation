@@ -8,13 +8,17 @@
     "uri": "psap.feature",
     "elements": [
       {
-        "id": "validate-scenarios-for-psap-page;tc1_psap_verify-if-psap-card-should-be-display-on-ng911-dashboard",
+        "id": "validate-scenarios-for-psap-page;tc1_homepage_verify-if-we-are-able-to-login-on-ng911-dashboard",
         "keyword": "Scenario",
         "line": 12,
-        "name": "TC1_PSAP_Verify if PSAP card should be display on NG911 dashboard",
+        "name": "TC1_HomePage_Verify if we are able to login on NG911 dashboard",
         "tags": [
           {
-            "name": "@Test_FFP-27695",
+            "name": "@Test_FFP-27836",
+            "line": 11
+          },
+          {
+            "name": "@regression",
             "line": 11
           }
         ],
@@ -26,8 +30,9 @@
             "line": 13,
             "name": "I open NG911 login page",
             "result": {
-              "status": "passed",
-              "duration": 10250000000
+              "status": "failed",
+              "duration": 1896000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:20 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
             }
           },
           {
@@ -36,18 +41,688 @@
             "line": 14,
             "name": "I will be on home page",
             "result": {
-              "status": "passed",
-              "duration": 9632000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
+            "name": "I Verify if we are able to login on NG911 dashboard",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc2_homepage_verify-if-lumen-logo-should-enable-at-login-page-for-ng911",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "TC2_HomePage_Verify if Lumen logo should enable at login page for NG911",
+        "tags": [
+          {
+            "name": "@Test_FFP-27837",
+            "line": 17
+          },
+          {
+            "name": "@regression",
+            "line": 17
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 514000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:21 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I verify if Lumen logo should enable at login page for NG911",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc1_psap_verify-if-psap-card-should-be-display-on-ng911-dashboard",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "TC1_PSAP_Verify if PSAP card should be display on NG911 dashboard",
+        "tags": [
+          {
+            "name": "@Test_FFP-27695",
+            "line": 23
+          },
+          {
+            "name": "@regression",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 366000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:21 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
             "name": "I verify PSAP card shuld display on dashboard",
             "result": {
-              "status": "passed",
-              "duration": 3156000000
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc2_psap_verify-if-psap-count-should-be-display-on-psap-card",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "TC2_PSAP_Verify if PSAP count should be display on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27696",
+            "line": 29
+          },
+          {
+            "name": "@regression",
+            "line": 29
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 352000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:21 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "I verify PSAP count should be display on PSAP card",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc3_psap_verify-if-\"psap\"-should-be-display-on-psap-card",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "TC3_PSAP_Verify if \"PSAP\" should be display on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27697",
+            "line": 35
+          },
+          {
+            "name": "@regression",
+            "line": 35
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 419000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:22 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I verify PSAP text should be display on PSAP card",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc4_psap_verify-if-impacted-count-should-be-display-on-psap-card",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "TC4_PSAP_Verify if impacted count should be display on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27698",
+            "line": 41
+          },
+          {
+            "name": "@regression",
+            "line": 41
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 357000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:22 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I verify impacted count should be display on PSAP card",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc5_psap_verify-if-map-tab-should-be-display-under-psap-card",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "TC5_PSAP_Verify if Map Tab should be display under PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27699",
+            "line": 47
+          },
+          {
+            "name": "@regression",
+            "line": 47
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 354000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:23 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 50,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "I verify Map Tab should be display under PSAP card",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc6_psap_verify-if-list-tab-should-be-display-under-psap-card",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "TC6_PSAP_Verify if List Tab should be display under PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-27700",
+            "line": 53
+          },
+          {
+            "name": "@regression",
+            "line": 53
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 55,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 369000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:23 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 56,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "I verify if List Tab should be display under PSAP card",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc7_psap_verify-if-search-box-should-be-display-under-list-tab-on-psap-card",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "TC7_PSAP_Verify if search box should be display under List Tab on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277001",
+            "line": 59
+          },
+          {
+            "name": "@regression",
+            "line": 59
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 359000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:23 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 62,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "I verify search box should be display under List Tab on PSAP card",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc8_psap_verify-if-psap-data-table-should-be-display-under-list-tab-on-psap-card",
+        "keyword": "Scenario",
+        "line": 66,
+        "name": "TC8_PSAP_Verify if PSAP Data table should be display under List Tab on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277002",
+            "line": 65
+          },
+          {
+            "name": "@regression",
+            "line": 65
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 67,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 374000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:24 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 68,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "I verify if PSAP Data table should be display under List Tab on PSAP card",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc9_psap_verify-if-psap,-status,psap-id,calls-received,calls-missed-and-mos-score-should-be-display-as-table-header-under-list-tab-on-psap-card",
+        "keyword": "Scenario",
+        "line": 72,
+        "name": "TC9_PSAP_Verify if PSAP, Status,PSAP ID,Calls Received,Calls Missed and MOS Score should be display as table header under List Tab on PSAP card",
+        "tags": [
+          {
+            "name": "@Test_FFP-277003",
+            "line": 71
+          },
+          {
+            "name": "@regression",
+            "line": 71
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 73,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 390000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:24 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 74,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 75,
+            "name": "I verify if PSAP, Status,PSAP ID,Calls Received,Calls Missed and MOS Score should be display as table header under List Tab on PSAP card",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc10_psap:verify-if-psap-count-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 78,
+        "name": "TC10_PSAP:Verify if PSAP count on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277004",
+            "line": 77
+          },
+          {
+            "name": "@regression",
+            "line": 77
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 79,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 445000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:24 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 80,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 81,
+            "name": "I verify if PSAP count on UI should be same as API response",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc11_psap_verify-if-text-\"psap\"-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 84,
+        "name": "TC11_PSAP_Verify if text \"PSAP\" on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277005",
+            "line": 83
+          },
+          {
+            "name": "@regression",
+            "line": 83
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 85,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 419000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:25 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 86,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 87,
+            "name": "I verify if text PSAP on UI should be same as API response",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc12_psap_verify-if-impacted-count-on-ui-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 90,
+        "name": "TC12_PSAP_Verify if impacted count on UI should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277006",
+            "line": 89
+          },
+          {
+            "name": "@regression",
+            "line": 89
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 91,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 372000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:25 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 92,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 93,
+            "name": "I verify if impacted count on UI should be same as API response",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-scenarios-for-psap-page;tc13_psap_verify-if-all-psap-table-header-under-list-tab-on-psap-card-should-be-same-as-api-response",
+        "keyword": "Scenario",
+        "line": 97,
+        "name": "TC13_PSAP_Verify if all PSAP table header under List Tab on PSAP card should be same as API response",
+        "tags": [
+          {
+            "name": "@Test_FFP-277006",
+            "line": 96
+          },
+          {
+            "name": "@regression",
+            "line": 96
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 98,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "failed",
+              "duration": 374000000,
+              "error_message": "CypressError: `cy.request()` failed on:\n\nhttps://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\n\nThe response we received from your web server was:\n\n  > 502: Bad Gateway\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: PUT\nURL: https://beta-auth.enterprise.ctl.io/backdoor/token?dont-verify&env=env1\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/5.1.0 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 89\n}\nBody: {\"schema\":\"http://elasticbox.net/schemas/token-request\",\"uid\":\"9481\",\"type\":\"enterprise\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 502 - Bad Gateway\nHeaders: {\n  \"server\": \"openresty/1.15.8.2\",\n  \"date\": \"Tue, 26 Jan 2021 14:56:26 GMT\",\n  \"content-type\": \"text/html\",\n  \"content-length\": \"559\",\n  \"connection\": \"keep-alive\",\n  \"strict-transport-security\": \"max-age=15724800; includeSubDomains, max-age=31536000; includeSubDomains\"\n}\nBody: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx/1.19.2</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n    at http://localhost:50157/__cypress/runner/cypress_runner.js:159172:21\nFrom previous event:\n    at Context.request (http://localhost:50157/__cypress/runner/cypress_runner.js:159168:84)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:50157/__cypress/tests?p=cypress\\support\\index.js:39:8)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 99,
+            "name": "I will be on home page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 100,
+            "name": "I verify if all PSAP table header under List Tab on PSAP card should be same as API response",
+            "result": {
+              "status": "skipped"
             }
           }
         ]

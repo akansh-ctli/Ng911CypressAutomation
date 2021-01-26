@@ -2,6 +2,30 @@
 
 class NgcsPage {
 
+  validateNgcsCardIsEnable(){
+    cy.get(':nth-child(2) > .-center > .chi-stat__content').should('be.visible');
+  }
+  validateNgcsCountIsEnable(){
+    cy.get(':nth-child(2) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').should('be.visible');
+  }
+
+  validateNgcsTextIsDisplay(){
+    cy.get(':nth-child(2) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > .chi-stat-metric__title').should('be.visible');
+  }
+  validateNgcsImpactedCountIsDisplay(){
+    cy.get(':nth-child(2) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').should('be.visible');
+
+  }
+
+  validateNgcsSearchBoxIsDisplay(){
+    cy.get('#example__icon-left-aligned').should('be.visible');
+  }
+
+  validateNgcsDataTableIsDisplay(){
+    cy.get('#ngcs-core-section').should('be.visible');
+  }
+
+
   verifyAndClickNgcsTab() {
     cy.get(':nth-child(2) > .chi-stat > .chi-stat__content').should('be.visible').click();
     return this
