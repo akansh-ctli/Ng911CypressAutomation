@@ -49,122 +49,122 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify if List Tab should be display under PSAP card
 
-  @TEST_FFP-277001 @regression
+  @TEST_FFP-27701 @regression
   Scenario: TC7_PSAP_Verify if search box should be display under List Tab on PSAP card
     Given I open NG911 login page
     When I will be on home page
     Then I verify search box should be display under List Tab on PSAP card
 
-  @TEST_FFP-277002 @regression
+  @TEST_FFP-27702 @regression
   Scenario: TC8_PSAP_Verify if PSAP Data table should be display under List Tab on PSAP card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if PSAP Data table should be display under List Tab on PSAP card
 
-  @TEST_FFP-277003 @regression
+  @TEST_FFP-27703 @regression
   Scenario: TC9_PSAP_Verify if PSAP, Status,PSAP ID,Calls Received,Calls Missed and MOS Score should be display as table header under List Tab on PSAP card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if PSAP, Status,PSAP ID,Calls Received,Calls Missed and MOS Score should be display as table header under List Tab on PSAP card
 
-  @TEST_FFP-277004 @regression
+  @TEST_FFP-27704 @regression
   Scenario: TC10_PSAP:Verify if PSAP count on UI should be same as API response
     Given I open NG911 login page
     When I will be on home page
     Then I verify if PSAP count on UI should be same as API response
 
-  @TEST_FFP-277005 @regression
+  @TEST_FFP-27705 @regression
   Scenario: TC11_PSAP_Verify if text "PSAP" on UI should be same as API response
     Given I open NG911 login page
     When I will be on home page
     Then I verify if text PSAP on UI should be same as API response
 
-  @TEST_FFP-277006 @regression
+  @TEST_FFP-27706 @regression
   Scenario: TC12_PSAP_Verify if impacted count on UI should be same as API response
     Given I open NG911 login page
     When I will be on home page
     Then I verify if impacted count on UI should be same as API response
 
     
-  @TEST_FFP-277006 @regression
+  @TEST_FFP-27707 @regression
   Scenario: TC13_PSAP_Verify if all PSAP table header under List Tab on PSAP card should be same as API response
     Given I open NG911 login page
     When I will be on home page
     Then I verify if all PSAP table header under List Tab on PSAP card should be same as API response
 
-  @TEST_FFP-277008 @regression
+  @TEST_FFP-27708 @regression
   Scenario: TC14_NGCS_Verify if NGCS card should be display on NG911 dashboard 
     Given I open NG911 login page
     When I will be on home page
     Then I verify if NGCS card should be display on NG911 dashboard
 
-  @TEST_FFP-277009 @regression
+  @TEST_FFP-27709 @regression
   Scenario: TC15_NGCS_Verify if NGCS count should be display on NGCS card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if NGCS count should be display on NGCS card
 
-  @TEST_FFP-277010 @regression
+  @TEST_FFP-27710 @regression
   Scenario: TC16_NGCS_Verify if txt "NGCS" should be display on NGCS card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if text NGCS should be display on NGCS card
    
-  @TEST_FFP-277017 @regression
+  @TEST_FFP-27717 @regression
   Scenario: TC17_NGCS_Verify if impacted count should be display on NGCS card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if impacted count should be display on NGCS card 
 
-  @TEST_FFP-277018 @regression
+  @TEST_FFP-27718 @regression
   Scenario: TC18_NGCS_Verify if NGCS Core Tab should be display under NGCS card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if NGCS Core Tab should be display under NGCS card
 
-  @TEST_FFP-277019 @regression
+  @TEST_FFP-27719 @regression
   Scenario: TC19_NGCS_Verify if Component Status Tab should be display under NGCS card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if Component Status Tab should be display under NGCS card
  
-  @TEST_FFP-277020 @regression
+  @TEST_FFP-27720 @regression
   Scenario: TC20_NGCS_Verify if Core Functions Tab should be display under NGCS 
     Given I open NG911 login page
     When I will be on home page
     Then I verify if Core Functions Tab should be display under NGCS
 
-  @TEST_FFP-277021 @regression
+  @TEST_FFP-27721 @regression
   Scenario: TC21_NGCS_Verify if search box should be display under NGCS card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if search box should be display under NGCS card
 
-  @TEST_FFP-277022 @regression
+  @TEST_FFP-27722 @regression
   Scenario: TC22_NGCS_Verify if NGCS Data table should be display under NGCS card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if NGCS Data table should be display under NGCS card 
 
-  @TEST_FFP-277026 @regression
+  @TEST_FFP-27726 @regression
   Scenario: TC26_NGCS_Verify if NGCS count on UI should be same as API response
     Given I open NG911 login page
     When I will be on home page
     Then I verify if NGCS count on UI should be same as API response
 
-  @TEST_FFP-277027 @regression
+  @TEST_FFP-27727 @regression
   Scenario: TC27_NGCS_Verify if text "NGCS" on UI should be same as API response
     Given I open NG911 login page
     When I will be on home page
     Then I verify if text NGCS on UI should be same as API response
 
-  @TEST_FFP-277028 @regression
+  @TEST_FFP-27728 @regression
   Scenario: TC28_NGCS_Verify if impacted count on UI should be same as API response for NGCS
     Given I open NG911 login page
     When I will be on home page
     Then I verify if impacted count on UI should be same as API response for NGCS
 
-  @TEST_FFP-277029 
+  @TEST_FFP-27729 
   Scenario: TC29_NGCS_Verify if all NGCS table header under List Tab on NGCS card should be same as API response
     Given I open NG911 login page
     When I will be on home page
@@ -218,19 +218,19 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)
 
-  @TEST_27832 @regression
+  @TEST_FFP-27832 @regression
   Scenario: TC9_INGRESS_Verify if INGRESS word get displayed in ingress card
     Given I open NG911 login page
     When I will be on home page
     Then I verify if INGRESS word get displayed in ingress card
 
-  @TEST_27833 @regression
+  @TEST_FFP-27833 @regression
   Scenario: TC10_INGRESS_Verify if INGRESS impacted count displayed in UI is same in API response
     Given I open NG911 login page
     When I will be on home page
     Then I verify if INGRESS impacted count displayed in UI is same in API response
 
-  @TEST_27834 @regression
+  @TEST_FFP-27834 @regression
   Scenario: TC11_INGRESS_Verify if all INGRESS table headers displayed under Gateways tab should be same as API response
     Given I open NG911 login page
     When I will be on home page
