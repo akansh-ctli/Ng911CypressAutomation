@@ -1,5 +1,6 @@
 Feature: Validate Regression scenarios for NG911
 
+
   @TEST_FFP-27836 @regression
   Scenario: TC1_HomePage_Verify if we are able to login on NG911 dashboard
     Given I open NG911 login page
@@ -163,7 +164,7 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify if impacted count on UI should be same as API response for NGCS
 
-  @TEST_FFP-277029 @regression
+  @TEST_FFP-277029 
   Scenario: TC29_NGCS_Verify if all NGCS table header under List Tab on NGCS card should be same as API response
     Given I open NG911 login page
     When I will be on home page
@@ -211,7 +212,7 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify INGRESS table get displayed under tab SBCs
 
-  @TEST_FFP-27750 @regression
+  @TEST_FFP-27750 
   Scenario: TC8_INGRESS_Verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)
     Given I open NG911 login page
     When I will be on home page
@@ -265,7 +266,7 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify alarms table get displayed in alarms page
 
-  @TEST_FFP-27742 @regression
+  @TEST_FFP-27742 
   Scenario: TC6_ALARMS_Verify columns Time,Segment,Device,Severity and Description get displayed
     Given I open NG911 login page
     When I will be on home page
@@ -289,7 +290,7 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify if text ALARMS on UI should be same as API response
 
-  @TEST_FFP-27831 @regression
+  @TEST_FFP-27831 
   Scenario: TC11_ALARMS_Verify if all ALARMS table header on ALARMS card should be same as API response
     Given I open NG911 login page
     When I will be on home page
