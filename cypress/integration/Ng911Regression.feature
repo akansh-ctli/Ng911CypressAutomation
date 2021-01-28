@@ -1,6 +1,5 @@
 Feature: Validate Regression scenarios for NG911
 
-
   @TEST_FFP-27836 @regression
   Scenario: TC1_HomePage_Verify if we are able to login on NG911 dashboard
     Given I open NG911 login page
