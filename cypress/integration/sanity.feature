@@ -8,7 +8,7 @@ Feature: NG911 automation sanity
   @TEST_FFP-28037
   Scenario: validate PSAP page and there APIs
     Then I verify List and Map tab on PSAP page
-    And I verify card details on PSAP page With API1
+    And I verify card details on PSAP page With API
     #And I verify Table Header on PSAP page With API
 
   @TEST_FFP-28038
