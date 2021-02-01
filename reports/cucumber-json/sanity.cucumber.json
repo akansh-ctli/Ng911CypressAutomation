@@ -23,7 +23,7 @@
             "line": 1
           },
           {
-            "name": "@Test_FFP-27904",
+            "name": "@TEST_FFP-27904",
             "line": 3
           }
         ],
@@ -36,7 +36,7 @@
             "name": "I open NG911 login page",
             "result": {
               "status": "passed",
-              "duration": 15938000000
+              "duration": 24346000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I will be on home page",
             "result": {
               "status": "passed",
-              "duration": 10926000000
+              "duration": 10270000000
             }
           }
         ]
@@ -54,12 +54,16 @@
       {
         "id": "ng911-automation-sanity;validate-psap-page-and-there-apis",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 9,
         "name": "validate PSAP page and there APIs",
         "tags": [
           {
             "name": "@ng911sanity",
             "line": 1
+          },
+          {
+            "name": "@TEST_FFP-28037",
+            "line": 8
           }
         ],
         "type": "scenario",
@@ -67,20 +71,21 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
+            "line": 10,
             "name": "I verify List and Map tab on PSAP page",
             "result": {
-              "status": "skipped",
-              "duration": 829000000
+              "status": "passed",
+              "duration": 10215000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 11,
             "name": "I verify card details on PSAP page With API",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7915000000
             }
           }
         ]
@@ -88,12 +93,16 @@
       {
         "id": "ng911-automation-sanity;validate-ngcs-page-and-there-apis",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 15,
         "name": "validate NGCS page and there APIs",
         "tags": [
           {
             "name": "@ng911sanity",
             "line": 1
+          },
+          {
+            "name": "@TEST_FFP-28038",
+            "line": 14
           }
         ],
         "type": "scenario",
@@ -101,20 +110,21 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
+            "line": 16,
             "name": "I verify NgcsCore,ComponentStatus and NgcsCoreDevices tab on NGCS page",
             "result": {
-              "status": "skipped",
-              "duration": 21000000
+              "status": "passed",
+              "duration": 3936000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 15,
+            "line": 17,
             "name": "I verify card details on NGCS page With API",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3990000000
             }
           }
         ]
@@ -122,12 +132,16 @@
       {
         "id": "ng911-automation-sanity;validate-ingress-page-and-there-apis",
         "keyword": "Scenario",
-        "line": 18,
+        "line": 21,
         "name": "validate INGRESS page and there APIs",
         "tags": [
           {
             "name": "@ng911sanity",
             "line": 1
+          },
+          {
+            "name": "@TEST_FFP-28039",
+            "line": 20
           }
         ],
         "type": "scenario",
@@ -135,20 +149,21 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
+            "line": 22,
             "name": "I verify Gateways, SBCs Tabs and data table present on INGRESS page",
             "result": {
-              "status": "skipped",
-              "duration": 123000000
+              "status": "passed",
+              "duration": 4461000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
+            "line": 23,
             "name": "I verify card details on INGRESS page With API",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3879000000
             }
           }
         ]
@@ -156,12 +171,16 @@
       {
         "id": "ng911-automation-sanity;validate-alarms-page-and-there-apis",
         "keyword": "Scenario",
-        "line": 23,
+        "line": 27,
         "name": "validate ALARMS page and there APIs",
         "tags": [
           {
             "name": "@ng911sanity",
             "line": 1
+          },
+          {
+            "name": "@TEST_FFP-28040",
+            "line": 26
           }
         ],
         "type": "scenario",
@@ -169,20 +188,21 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 28,
             "name": "I verify data table present on ALARMS page",
             "result": {
-              "status": "skipped",
-              "duration": 61000000
+              "status": "passed",
+              "duration": 4360000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 29,
             "name": "I verify card details on ALARMS page With API",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3761000000
             }
           }
         ]
