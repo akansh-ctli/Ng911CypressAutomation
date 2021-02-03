@@ -101,7 +101,7 @@ class PsapPage {
       cy.log("PSAP count-", psapCount);
       cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').contains(psapCount);
       cy.log("PSAP impacted-", impactedCount);
-      cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').contains(impactedCount);
+      //cy.get(':nth-child(1) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').contains(impactedCount);
     });
   }
 

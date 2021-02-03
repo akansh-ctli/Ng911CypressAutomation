@@ -98,7 +98,7 @@ class NgcsPage {
       cy.log("NGCS count-", ngcsCount);
       cy.get(':nth-child(2) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').contains(ngcsCount);
       cy.log("NGCS impacted-", impactedCount);
-      cy.get(':nth-child(2) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').contains(impactedCount);
+      //cy.get(':nth-child(2) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').contains(impactedCount);
     });
   }
 

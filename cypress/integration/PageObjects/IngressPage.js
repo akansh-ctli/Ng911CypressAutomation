@@ -61,7 +61,7 @@ class IngressPage {
       cy.log("ingress count-", ingressCount);
       cy.get(':nth-child(3) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').contains(ingressCount);
       cy.log("ingress impacted-", impactedCount);
-      cy.get(':nth-child(3) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').contains(impactedCount);
+      //cy.get(':nth-child(3) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').contains(impactedCount);
     });
   }
   verifyAndClickIngressTab() {
