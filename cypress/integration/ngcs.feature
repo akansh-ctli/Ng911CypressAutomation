@@ -5,4 +5,4 @@ Feature: validate Regrssion scenarios for NGCS page
     When I will be on home page
     Then I verify NgcsCore,ComponentStatus and NgcsCoreDevices tab on NGCS page
     And I verify card details on NGCS page With API
-    #And I verify Table Header on NGCS page With API
+    And I verify Table Header on NGCS page With API

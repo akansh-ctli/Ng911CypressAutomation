@@ -64,7 +64,7 @@ Then('I verify INGRESS table get displayed under tab SBCs', () => {
    ingressPage.verifyIngressDataTableSbcIsDisplay()
 });
 
-Then('I verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)', () => {
+Then('I verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization', () => {
    cy.wait(1000)
    ingressPage.verifyAndClickIngressTab() 
    ingressPage.verifyTableHeaderWithApiIngress()

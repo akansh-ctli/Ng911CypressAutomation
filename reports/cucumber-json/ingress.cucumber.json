@@ -1,0 +1,77 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "validate scenarios for INGRESS page",
+    "line": 1,
+    "id": "validate-scenarios-for-ingress-page",
+    "tags": [],
+    "uri": "ingress.feature",
+    "elements": [
+      {
+        "id": "validate-scenarios-for-ingress-page;validate-ingress-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "validate ingress page",
+        "tags": [
+          {
+            "name": "@ingresstest",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 4975000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 8244000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I verify Gateways, SBCs Tabs and data table present on INGRESS page",
+            "result": {
+              "status": "passed",
+              "duration": 4767000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I verify card details on INGRESS page With API",
+            "result": {
+              "status": "passed",
+              "duration": 3717000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify Table Header on INGRESS page With API",
+            "result": {
+              "status": "passed",
+              "duration": 2671000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

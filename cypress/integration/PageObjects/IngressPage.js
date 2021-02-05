@@ -106,10 +106,15 @@ class IngressPage {
           "ingressType",
           "status",
           "trunksAvaiable",
+          "trunksAvailableMetric",
+          "trunksActiveMetric",
           "trunksActive",
+          "callsReceivedMetric",
           "callsReceived",
           "callsDelivered",
-          "linkUitilization"
+          "callsDeliveredMetric",
+          "linkUitilization",
+          "linkUitilizationMetric"
         );
       });
     });

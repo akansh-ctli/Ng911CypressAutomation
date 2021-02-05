@@ -59,13 +59,12 @@ class AlarmsPage {
       expect(response.body).to.not.be.null;
       let alarmLists = response.body.alarmLists;
       alarmLists.forEach((item) => {
-        expect(item).to.have.all.keys(
+        expect(item).to.have.all.keys( 
           "alarmTimestamp",
-          "device",
-          "metric",
           "segment",
-          "threshold",
-          "type"
+          "device",
+          "type",
+          "metric"      
         );
       });
     });

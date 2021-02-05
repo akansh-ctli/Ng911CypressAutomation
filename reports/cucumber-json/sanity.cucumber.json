@@ -36,7 +36,7 @@
             "name": "I open NG911 login page",
             "result": {
               "status": "passed",
-              "duration": 5131000000
+              "duration": 6758000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I will be on home page",
             "result": {
               "status": "passed",
-              "duration": 8156000000
+              "duration": 8418000000
             }
           }
         ]
@@ -75,7 +75,7 @@
             "name": "I verify List and Map tab on PSAP page",
             "result": {
               "status": "passed",
-              "duration": 9841000000
+              "duration": 9831000000
             }
           },
           {
@@ -85,7 +85,17 @@
             "name": "I verify card details on PSAP page With API",
             "result": {
               "status": "passed",
-              "duration": 6686000000
+              "duration": 4547000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I verify Table Header on PSAP page With API",
+            "result": {
+              "status": "passed",
+              "duration": 9840000000
             }
           }
         ]
@@ -114,7 +124,7 @@
             "name": "I verify NgcsCore,ComponentStatus and NgcsCoreDevices tab on NGCS page",
             "result": {
               "status": "passed",
-              "duration": 3847000000
+              "duration": 4016000000
             }
           },
           {
@@ -124,7 +134,17 @@
             "name": "I verify card details on NGCS page With API",
             "result": {
               "status": "passed",
-              "duration": 3732000000
+              "duration": 3683000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I verify Table Header on NGCS page With API",
+            "result": {
+              "status": "passed",
+              "duration": 2451000000
             }
           }
         ]
@@ -153,7 +173,7 @@
             "name": "I verify Gateways, SBCs Tabs and data table present on INGRESS page",
             "result": {
               "status": "passed",
-              "duration": 4707000000
+              "duration": 4377000000
             }
           },
           {
@@ -163,7 +183,17 @@
             "name": "I verify card details on INGRESS page With API",
             "result": {
               "status": "passed",
-              "duration": 3873000000
+              "duration": 3706000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I verify Table Header on INGRESS page With API",
+            "result": {
+              "status": "passed",
+              "duration": 2575000000
             }
           }
         ]
@@ -192,7 +222,7 @@
             "name": "I verify data table present on ALARMS page",
             "result": {
               "status": "passed",
-              "duration": 4275000000
+              "duration": 4343000000
             }
           },
           {
@@ -202,7 +232,17 @@
             "name": "I verify card details on ALARMS page With API",
             "result": {
               "status": "passed",
-              "duration": 3677000000
+              "duration": 6702000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I verify Table Header on ALARMS page With API",
+            "result": {
+              "status": "passed",
+              "duration": 2566000000
             }
           }
         ]

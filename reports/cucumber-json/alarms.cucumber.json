@@ -1,0 +1,77 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "validate regression scenarios for ALARMS page",
+    "line": 1,
+    "id": "validate-regression-scenarios-for-alarms-page",
+    "tags": [],
+    "uri": "alarms.feature",
+    "elements": [
+      {
+        "id": "validate-regression-scenarios-for-alarms-page;validate-alarms-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "validate alarms page",
+        "tags": [
+          {
+            "name": "@alarmstest",
+            "line": 2
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open NG911 login page",
+            "result": {
+              "status": "passed",
+              "duration": 8545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I will be on home page",
+            "result": {
+              "status": "passed",
+              "duration": 10456000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I verify data table present on ALARMS page",
+            "result": {
+              "status": "passed",
+              "duration": 4419000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I verify card details on ALARMS page With API",
+            "result": {
+              "status": "passed",
+              "duration": 3621000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify Table Header on ALARMS page With API",
+            "result": {
+              "status": "passed",
+              "duration": 2583000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

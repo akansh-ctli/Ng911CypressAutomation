@@ -69,8 +69,13 @@ class NgcsPage {
           "ngcsCoreName",
           "ngcsCoreStatus",
           "callsRecived",
+          "callsReceivedMetric",
           "callsProgressed",
-          "callsRoutedSuccessfully"
+          "callsProgressedMetric",
+          "callsRoutedSuccessfully",
+          "callsRoutedSuccessfullyMetric",
+          "secondaryRoutedCalls",
+          "secondaryRoutedCallsMetric"
         );
       });
     });
