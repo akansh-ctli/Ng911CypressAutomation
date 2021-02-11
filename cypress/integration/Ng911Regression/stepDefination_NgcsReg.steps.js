@@ -113,3 +113,21 @@ Then('I verify card details on NGCS page With API', () => {
 });
 
 
+Then('I verify if NGCS Core,Status,Calls Received,Calls Answered,Calls Routed Successfully and Secondary routed calls should be display as table header underNGCS Core on NGCS card', () => {
+  cy.wait(3000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.verifyHeaderNGCSCore() 
+});
+
+Then('I verify if Core,Core Component,Status and In Maintenance? should be display as table header under NGCS Core on Component Status', () => {
+  cy.wait(3000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.verifyHeaderComponentStatus()
+});
+
+Then('I verify if Core Function and No of Calls Queries should be display as table header under NGCS Core on Core Functions', () => {
+  cy.wait(3000)
+  ngcsPage.verifyAndClickNgcsTab()
+  ngcsPage.verifyHeaderCoreFunctions() 
+});
+

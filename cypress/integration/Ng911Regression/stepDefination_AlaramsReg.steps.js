@@ -63,6 +63,13 @@ Then('I verify if ALARM count on UI should be same as API response', () => {
    alarmsPage.verifyAlarmsCardDetails()
 });
 
+Then('I verify if impacted count should not get displayed in Alarms card', () => {
+   cy.wait(1000)
+   alarmsPage.verifyAndClickAlarmsTab()
+   alarmsPage.verifyAlarmsImpactedCountIsNotDisplay()
+});
+
+
 Then('I verify if text ALARMS on UI should be same as API response', () => {
    cy.wait(1000)
    alarmsPage.verifyAndClickAlarmsTab()

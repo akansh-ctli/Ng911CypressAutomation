@@ -29,7 +29,8 @@ When('I will be on home page', () => {
   
   And('I verify Table Header on PSAP page With API', () => {
     cy.wait(2000)
-    psapPage.verifyTableHeaderWithApiPSAP()
+    psapPage.verifyPsapDataTableHeader_UI()
+    //psapPage.verifyTableHeaderWithApiPSAP()
     cy.log('API validation for table header on PSAP page successful');
    });
 
@@ -116,4 +117,30 @@ Then('I verify if impacted count on UI should be same as API response', () => {
 Then('I verify if all PSAP table header under List Tab on PSAP card should be same as API response', () => {
   cy.wait(3000)
   psapPage.verifyTableHeaderWithApiPSAP()
+});
+
+Then('I verify if PSAP drawer should display for PSAP', () => {
+  cy.wait(3000)
+  psapPage.verifyPsapDrawerDisplay();
+  
+});
+
+Then('I verify if Overview tab should display on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyOverviewTabDisplayOnPsapDrawer();
+});
+
+Then('I verify if Alarms tab should display on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyAlarmsTabDisplayOnPsapDrawer();
+});
+
+Then('I verify all table header at Overview tab on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyTableHeaderOnOverviewTabOnPsapDrawer();
+});
+
+Then('I verify all table header at Alarms tab on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyTableHeaderOnAlarmsTabOnPsapDrawer();
 });

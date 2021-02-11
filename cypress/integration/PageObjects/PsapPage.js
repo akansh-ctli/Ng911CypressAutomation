@@ -105,9 +105,100 @@ class PsapPage {
     });
   }
 
+  verifyPsapDataTableHeader_UI() {
+    cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+    const expPsapDataHeaders = ['PSAP', 'Status', 'PSAP ID','Calls Received','Calls Missed','MOS Score'];
+    cy.wrap(expPsapDataHeaders).each(($el, index, $list) => {
+      index=index+1
+      const loc="#list-section > div > div > div > div > div.chi-card__content > section > div > table > thead > tr > th:nth-child("+index+") > div"
+      cy.get(loc).contains($el);
+         })          
+      }
+    
+      verifyPsapDrawerDisplay() {
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#PSAPDrawerTab').should('be.visible')
+      }
 
+      verifyOverviewTabDisplayOnPsapDrawer() {
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#list-section > div > div > div > div > div.chi-card__content').should('be.visible')
+        cy.get('#overviewTab').should('be.visible')
+      }
+      verifyAlarmsTabDisplayOnPsapDrawer() {
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#list-section > div > div > div > div > div.chi-card__content').should('be.visible')
+        cy.get('#PSAPDrawerTab > li:nth-child(2) > a').should('be.visible')
+      }
 
-  getPsapIdsFromServiceMap(){
+      verifyTableHeaderOnOverviewTabOnPsapDrawer() {
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#list-section > div > div > div > div > div.chi-card__content').should('be.visible')
+        cy.get('#overviewTab').should('be.visible').click()
+
+        const expOverviewTabHeaders = ['PSAP Connections', 'Device', 'Avg Utilization (%)','Packet Loss (%)','Jitter (ms)'];
+        cy.wrap(expOverviewTabHeaders).each(($el, index, $list) => {
+          index=index+1
+          const loc="#overveiwTabPannel > table > thead > tr > th:nth-child("+index+")"
+          cy.get(loc).contains($el);
+             }) 
+      }
+
+      verifyTableHeaderOnAlarmsTabOnPsapDrawer() {
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#list-section > div > div > div > div > div.chi-card__content').should('be.visible')
+        cy.get('#PSAPDrawerTab > li:nth-child(2) > a').should('be.visible').click()
+
+        const expAlarmsTabHeaders = ['Time (UTC)', 'Device', 'Severity','Description'];
+        cy.wrap(expAlarmsTabHeaders).each(($el, index, $list) => {
+          index=index+1
+          const loc="#alarmsTabPannel > table > thead > tr > th:nth-child("+index+")"
+          cy.get(loc).contains($el);
+             }) 
+      }
+      
+      verifyPsapNameDisplayOnPsapDrawer(){
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#list-section > div > div > div > div > div.chi-card__content').should('be.visible')
+        cy.get('#bottomDrawer > div.chi-drawer__header > span > span.psap-name').should('be.visible')
+      }
+      verifyPsapIdDisplayOnPsapDrawer(){
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#list-section > div > div > div > div > div.chi-card__content').should('be.visible')
+        cy.get('#bottomDrawer > div.chi-drawer__header > span > span.psap-id').should('be.visible')
+      }
+      verifyPsapAddressDisplayOnPsapDrawer(){
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#list-section > div > div > div > div > div.chi-card__content').should('be.visible')
+        cy.get('#bottomDrawer > div.chi-drawer__header > span > span.psap-address').should('be.visible')
+      }
+
+      verifyCloseButtonDisplayOnPsapDrawer(){
+        cy.get('.menu-items > :nth-child(1) > .chi-card__tabs > .chi-tabs > :nth-child(2) > a').should('be.visible').click();
+        cy.wait(2000)
+        cy.get('#list-section > div > div > div > div > div.chi-card__content > section > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > a').should('be.visible').click();
+        cy.get('#list-section > div > div > div > div > div.chi-card__content').should('be.visible')
+        cy.get('#bottomDrawer > div.chi-drawer__header > button').should('be.visible')
+      }
+      
+
+    getPsapIdsFromServiceMap(){
     //cy.get('div.chi-popover:nth-child(6) > div:nth-child(1) > div:nth-child(1)').click({force: true})
     cy.get('div.chi-popover',{timeout:60000}).each(($el, index, $list) => {
         index=index+2;
@@ -129,6 +220,7 @@ class PsapPage {
      
     })
   }
+  
 
   getAppLogOutTime(mTimeOut) {
     var flag = true;

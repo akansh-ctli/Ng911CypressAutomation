@@ -94,3 +94,9 @@ Then('I verify if all ALARMS table header on ALARMS card should be same as API r
     alarmsPage.verifyAlarmsCardDetails()
     cy.log('ALARMS card details validated successful');
  });
+
+ Then('I verify if impacted count should not get displayed in Alarms card', () => {
+   cy.wait(1000)
+   alarmsPage.verifyAndClickAlarmsTab()
+   alarmsPage.verifyAlarmsImpactedCountIsNotDisplay()
+});

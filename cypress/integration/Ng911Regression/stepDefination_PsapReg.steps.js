@@ -117,3 +117,50 @@ Then('I verify if all PSAP table header under List Tab on PSAP card should be sa
   cy.wait(3000)
   psapPage.verifyTableHeaderWithApiPSAP()
 });
+
+
+Then('I verify if PSAP drawer should display for PSAP', () => {
+  cy.wait(3000)
+  psapPage.verifyPsapDrawerDisplay();
+  
+});
+
+Then('I verify if Overview tab should display on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyOverviewTabDisplayOnPsapDrawer();
+});
+
+Then('I verify if Alarms tab should display on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyAlarmsTabDisplayOnPsapDrawer();
+});
+
+Then('I verify all table header at Overview tab on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyTableHeaderOnOverviewTabOnPsapDrawer();
+});
+
+Then('I verify all table header at Alarms tab on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyTableHeaderOnAlarmsTabOnPsapDrawer();
+});
+
+Then('I Verify if PSAP name should display on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyPsapNameDisplayOnPsapDrawer()
+});
+
+Then('I Verify if PSAP id should display on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyPsapIdDisplayOnPsapDrawer()
+});
+
+Then('I Verify if PSAP address should display on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyPsapAddressDisplayOnPsapDrawer()
+});
+
+Then('I Verify if close button should display on PSAP drawer', () => {
+  cy.wait(3000)
+  psapPage.verifyCloseButtonDisplayOnPsapDrawer()
+});

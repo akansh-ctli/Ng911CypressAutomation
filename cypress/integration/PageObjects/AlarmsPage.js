@@ -9,6 +9,11 @@ class AlarmsPage {
   verifyAlarmsCountIsDisplay() {
     cy.get(':nth-child(4) > .-center > .chi-stat__content > #content-div-regular > .chi-stat-metric > div.chi-stat-metric__value').should('be.visible');
   }
+
+  verifyAlarmsImpactedCountIsNotDisplay() {
+    cy.get(':nth-child(4) > .-center > .chi-stat__content > #content-div-regular > div.chi-stat-submetric').should('not.visible');
+  }
+
   verifySearchBoxIsDisplay(){
     cy.get('#example__icon-left-aligned').should('be.visible');
   }

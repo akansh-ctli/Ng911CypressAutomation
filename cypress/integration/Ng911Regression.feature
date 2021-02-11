@@ -90,6 +90,60 @@ Feature: Validate Regression scenarios for NG911
     Given I open NG911 login page
     When I will be on home page
     Then I verify if all PSAP table header under List Tab on PSAP card should be same as API response
+ 
+  @TEST_FFP-FFP-28996 @regression
+  Scenario: TC14_PSAP: Verify if PSAP drawer should display for PSAP
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify if PSAP drawer should display for PSAP
+
+  @TEST_FFP-28997 @regression
+  Scenario: TC15_PSAP: Verify if Overview tab should display on PSAP drawer
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify if Overview tab should display on PSAP drawer
+
+  @TEST_FFP-28998 @regression
+  Scenario: TC16_PSAP: Verify if Alarms tab should display on PSAP drawer
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify if Alarms tab should display on PSAP drawer
+
+  @TEST_FFP-28999 @regression
+  Scenario: TC17_PSAP: Verify all table header at Overview tab on PSAP drawer 
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify all table header at Overview tab on PSAP drawer
+
+  @TEST_FFP-29000 @regression
+  Scenario: TC18_PSAP: Verify all table header at Alarms tab on PSAP drawer 
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify all table header at Alarms tab on PSAP drawer  
+
+  @TEST_FFP-29014 @regression
+  Scenario: TC19_PSAP_Verify if PSAP name should display on PSAP drawer
+    Given I open NG911 login page
+    When I will be on home page
+    Then I Verify if PSAP name should display on PSAP drawer 
+
+  @TEST_FFP-29015 @regression
+  Scenario: TC20_PSAP_Verify if PSAP id should display on PSAP drawer
+    Given I open NG911 login page
+    When I will be on home page
+    Then I Verify if PSAP id should display on PSAP drawer
+
+  @TEST_FFP-29016 @regression
+  Scenario: TC21_PSAP_Verify if PSAP address should display on PSAP drawer
+    Given I open NG911 login page
+    When I will be on home page
+    Then I Verify if PSAP address should display on PSAP drawer
+
+  @TEST_FFP-29017 @regression
+  Scenario: TC22_PSAP_Verify if close button should display on PSAP drawer
+    Given I open NG911 login page
+    When I will be on home page
+    Then I Verify if close button should display on PSAP drawer      
 
   @TEST_FFP-27708 @regression
   Scenario: TC14_NGCS_Verify if NGCS card should be display on NG911 dashboard 
@@ -169,6 +223,24 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify if all NGCS table header under List Tab on NGCS card should be same as API response
 
+  @TEST_FFP-27723 @regression
+  Scenario: TC23_NGCS_Verify if NGCS Core,Status,Calls Received,Calls Answered,Calls Routed Successfully and Secondary routed calls should be display as table header underNGCS Core on NGCS card
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify if NGCS Core,Status,Calls Received,Calls Answered,Calls Routed Successfully and Secondary routed calls should be display as table header underNGCS Core on NGCS card
+
+  @TEST_FFP-27724 @regression
+  Scenario: TC24_NGCS_Verify if Core,Core Component,Status and In Maintenance? should be display as table header under NGCS Core on Component Status
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify if Core,Core Component,Status and In Maintenance? should be display as table header under NGCS Core on Component Status
+  
+  @TEST_FFP-27725 @regression
+  Scenario: TC25_NGCS_Verify if Core Function and No of Calls/Queries should be display as table header under NGCS Core on Core Functions
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify if Core Function and No of Calls Queries should be display as table header under NGCS Core on Core Functions
+
   @TEST_FFP-27743 @regression
   Scenario: TC1_INGRESS_Verify if INGRESS card get displayed on NG911 dashboard
     Given I open NG911 login page
@@ -211,7 +283,7 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify INGRESS table get displayed under tab SBCs
 
-  @TEST_FFP-27750 @regression
+  @TEST_FFP-27751 @regression
   Scenario: TC8_INGRESS_Verify colums Ingress SBC,Status,Calls Received,Calls Delivered and Link utilization(%)
     Given I open NG911 login page
     When I will be on home page
@@ -277,6 +349,12 @@ Feature: Validate Regression scenarios for NG911
     When I will be on home page
     Then I verify if ALARM word get displayed in Alarms card
 
+  @TEST_FFP-27828 @regression
+  Scenario: TC8_ALARMS: Verify if impacted count should not get displayed in Alarms card
+    Given I open NG911 login page
+    When I will be on home page
+    Then I verify if impacted count should not get displayed in Alarms card 
+
   @TEST_FFP-27829 @regression
   Scenario: TC9_ALARMS_Verify if ALARM count on UI should be same as API response
     Given I open NG911 login page
@@ -294,3 +372,4 @@ Feature: Validate Regression scenarios for NG911
     Given I open NG911 login page
     When I will be on home page
     Then I verify if all ALARMS table header on ALARMS card should be same as API response 
+ 

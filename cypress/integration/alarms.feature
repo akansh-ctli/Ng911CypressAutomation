@@ -6,5 +6,3 @@ Feature: validate regression scenarios for ALARMS page
     Then I verify data table present on ALARMS page
     And I verify card details on ALARMS page With API
     And I verify Table Header on ALARMS page With API
-
- 

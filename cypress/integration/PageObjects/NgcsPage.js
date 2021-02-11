@@ -107,5 +107,37 @@ class NgcsPage {
     });
   }
 
+  verifyHeaderNGCSCore() {
+    cy.get('#core-device-tab > li:nth-child(1) > a:nth-child(1)').should('be.visible').click();
+    const expNGCSCoreHeaders = ['NGCS Core', 'Status', 'Calls Received','Calls Answered','Calls Routed Successfully','Secondary routed calls'];
+    cy.wrap(expNGCSCoreHeaders).each(($el, index, $list) => {
+      index=index+1
+      const loc="#ngcs-core-section > table > thead > tr > th:nth-child("+index+") > div"
+      cy.get(loc).contains($el);
+  })
+  }
+
+  verifyHeaderComponentStatus() {
+    cy.get('#core-device-tab > li:nth-child(2) > a:nth-child(1)').should('be.visible').click();
+    const expNGCSCoreHeaders = ['Core', 'Core Component', 'Status','In Maintenance?'];
+    cy.wrap(expNGCSCoreHeaders).each(($el, index, $list) => {
+      index=index+1
+      const loc="#component-status-section > table > thead > tr > th:nth-child("+index+") > div"
+      cy.get(loc).contains($el);
+  })
+
+  }
+  
+  verifyHeaderCoreFunctions() {
+    cy.get('#core-device-tab > li:nth-child(3) > a:nth-child(1)').should('be.visible').click();
+    const expNGCSCoreHeaders = ['Core Function', 'No of Calls/Queries'];
+    cy.wrap(expNGCSCoreHeaders).each(($el, index, $list) => {
+      index=index+1
+      const loc="#core-devices-section > table > thead > tr > th:nth-child("+index+") > div"
+      cy.get(loc).contains($el);
+
+    })
+
+  }
 }
 export default NgcsPage
