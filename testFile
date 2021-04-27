@@ -1,5 +1,9 @@
 test1
 Testadded23
+<<<<<<< HEAD
 test
+=======
+testgitchanges
+>>>>>>> 5e4491b12c678a9a23e7d4663d5b372e6c21021d
 test3
 test4
